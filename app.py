@@ -151,6 +151,16 @@ tabs = st.tabs([
     "🛠️ Technology Choices"
 ])
 
+st.markdown("<br><br>", unsafe_allow_html=True)
+
+st.markdown(
+    """
+    <div class="highlight-box">
+        Pragya's LightWork AI Take-Home Task
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 # ============================================================
 # TAB 1: OVERVIEW
 # ============================================================
@@ -210,7 +220,7 @@ with tabs[0]:
             unsafe_allow_html=True
         )
 
-
+        
 # ============================================================
 # TAB 2: Q1 PMS INGESTION
 # ============================================================

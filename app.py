@@ -263,13 +263,13 @@ Operational DB + AI Context Store + Reporting Layer
         [
             ["Integration pattern", "Connector-based architecture"],
             ["Primary language", "Python"],
-            ["API framework", "FastAPI for webhooks and internal APIs"],
+            ["API framework", "FastAPI for webhooks and internal APIs, Authentication, Pagination"],
             ["Validation", "Pydantic, JSON Schema, Great Expectations, DBT"],
             ["Storage", "PostgreSQL for canonical data, AWS S3 for raw payloads"],
             ["Deployment", "Docker containers on Kubernetes"],
             ["Orchestration", "Airflow/Kubernetes CronJobs for scheduled sync"],
             ["Security", "Encryption, RBAC, secrets manager, PII masking"],
-            ["Failure handling", "Retries, dead-letter queue, quarantine tables"],
+            ["Failure handling", "Retries, Exponential backoff, dead-letter queue, quarantine tables"],
         ],
         columns=["Area", "Recommendation"]
     )
